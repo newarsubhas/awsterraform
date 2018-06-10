@@ -101,6 +101,7 @@ EOF
 
 ```
 I have created most of the variables as generic and then passing on their values via separate .tfvars file vpc_environment.tfvars:
+```shell
 cat > vpc_environment.tfvars <<EOF
 vpc = {
     tag                   = "TFTEST"
