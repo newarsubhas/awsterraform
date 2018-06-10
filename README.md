@@ -1,4 +1,16 @@
 
+# Installation
+
+Open Terminal by pressing command+space then type terminal and hit Enter key.
+Install homebrew first.
+```shell
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+```
+Install terraform.
+```shell
+brew install terraform
+```
+
 # Building Infrastructure
 After setting up the binaries we create an empty directory that will hold the new project. First thing we do is tell terraform which provider we are going to use. Since we are building Amazon AWS infrastructure we create a .tfvars file with our AWS IAM API credentials. For example, provider-credentials.tfvars with the following content:
 ```shell
